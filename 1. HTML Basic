@@ -1,0 +1,33 @@
+1. Basic
+<h1> Biggest title</h1>
+<b> be borded </b>
+<strong> is borded 
+<p>a separate paragraph</p>
+<i> is itale word type
+<em> is also itale type 
+<ol> ordered list
+    <li>eachl line list content
+<il> unordered list
+    <li>each line list content
+    can make any sub ul or ol in the list
+<div> some text some images and some more text to group that altogether and give it a big
+    <div> is block level element, take its own line
+    <span> is inline container
+    
+2. <Mdn doctype> find information about HTML
+3. MDN elements reference: to check all tags
+
+4. Attributes
+  <img src='', alt=''>
+  <a href="http://www.google.com">click here to go this website</a> # inline element
+    # it also can links to other HTML document 
+  
+5. Table
+  <table><tr> # tr makes a new row
+          <th> # is the table title
+          <td> # td is for each row's content
+          <thead> # use thead to make tr and th together
+          <tbody> # to make tr and td together
+          
+6. Forms
+  
