@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kay's Web</title>
+</head>
+<body>
+    <h1>Please Register!</h1>
+    <form action="">
+        <div>
+            <label for="firstname"><strong>First Name</strong></label>
+            <input name="firstname" id="firstname" type="text">
+            <label for="lasttname">Last Name</label>
+            <input name="lastname" id="lasttname" type="text">
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio" value="male">
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio" value="female">
+            <label for="other">Other</label>
+            <input name="gender" id="other" type="radio" value="other">
+        </div>
+
+        <div>
+            <label>Email:<input type="email" name="email" required></label>
+            <label>Password:<input type="password" name="password" pattern=".{5,10}" required title="5 to 10 characters"></label>
+        </div>
+        <div>
+        <label>Birthday
+            <select name="month">
+                <option>Jan</option>
+                <option>Fer</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>Agu</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+            </select>
+            <select name="day">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select>
+            <select name="year">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select></label>
+        </div>
+        <div><label for="agree">I agree with the policy</label>
+            <input type="checkbox" id="agree" name="agree">
+        </div>
+        <div><button>Submit</button></div>
+    </form>
+
+
+</body>
+</html>
