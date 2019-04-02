@@ -1,0 +1,39 @@
+1. Input
+    <form>
+      <input type='', placeholder=''>   # set an input block, show the hint inside
+      EX: <input name='username' type='text' placeholder='username'>
+          <input name='password'type='password' placeholder='password'>
+          <input type='submit'>
+     </form>
+   
+2. Form
+    where the form send data to?
+      <form action:'http://wikipedia.org' method='GET'>
+        so like this, we send data to wikipedia
+    what HTTP method?
+       if add the name='password', it will senf data to URL in action after submit with request
+    
+3. Labels
+    <lable>username <input></lable>
+    # put the label and input inside the lable tag
+    another style is using for and id to connect each other!
+    <label for='username'>username</label>
+    <input id='username' type='text' placeholder='username'>
+    
+4. Validations
+    add requried inside <input> to ask block to meet the type
+    like if type is email, the input should be email type
+   
+5. Radio button and checkbox
+    <input type='radio'>
+    <input type='checkbox'>
+    # radio button and checkbox button also can link with lables (for and id)
+    # if set two or more radio as the same name, only one of them can be chosen
+    # <button>CLICKS HERE</button> press button it will send data to somewhere,
+    # but you need add value inside of input <input value='cats'>.
+    
+6. Dropdowns Meum
+    <select name='color'><option value='RED'>red</option></select>
+    # you can put how many options inside select you want.
+    # give select a name, it will send the data too
+    # if you want to send another data of option, add a value inside option
