@@ -41,3 +41,8 @@
 7. textarea
     <textarea rows='10' cols='20'></textarea>
     # a larger input area
+    
+CONLUSION:
+    # for is linked to id, name is for radios bounded and show as the title of data, value is the data
+    # one module use form, one block use div
+    # reference: 'HTML project.html'
