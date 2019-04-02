@@ -37,3 +37,7 @@
     # you can put how many options inside select you want.
     # give select a name, it will send the data too
     # if you want to send another data of option, add a value inside option
+
+7. textarea
+    <textarea rows='10' cols='20'></textarea>
+    # a larger input area
