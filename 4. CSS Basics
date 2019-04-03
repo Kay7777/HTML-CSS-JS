@@ -1,0 +1,22 @@
+1. Introduction to CSS
+    CSS can be seen as 'adjectives', cascading style sheets
+    CSS zen garden website shows many things you can use CSS to dealwith
+    
+2. How to link abother ass file:
+    under the title, add <link rel='stylesheet' type='text/css' href='CSS Basics.css'>
+    add some attributes: h1{color: orange}
+    
+3. Colors in CSS:
+    The color uses Hexadecimal System base 16
+    0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+    _ _ first two decides hwo much red
+    _ _ middle two decides how much green
+    _ _ last two decides how much blue
+    
+    RGB system:
+    color: rgb(_ _ _, _ _ _, _ _ _) base 10
+    Largest is 255
+    
+    RGBA:
+    color: rgba(_, _, _, _) 255,255,255,0-1
+    the forth one is transparent
