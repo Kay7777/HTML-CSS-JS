@@ -1,0 +1,26 @@
+1. Text and Fonts:
+    search css font stack
+    p{font-family: Arial;}
+    h1{font-size: 50px;}
+    span{ font-size: 2.0em;}
+    h2{font-weight: normal/bold/100-800;}
+    h2{font-height: 2;}
+    h3{text-align: right/center}
+    p {text-decoration: underline/line-through;}
+    # https://fonts.google.com/ google fonts
+    # paste the link at the bottom of the website 
+    # and change the name of the font-family in the CSS
+    
+    
+2. Box Module
+    # marigin is outside of the border and padding is inside of the border
+    border: 2px solid blur;
+    width: 50%; # 50% of the page
+    padding: 10px; # 10px padding on all sides
+    padding-left: 40px; # ask just left padding of the content
+    margin: 100px;
+    margin-top: 10px;
+    margin: 20px 40px 500px 100px; # top bottom left and right
+    margin: 0 auto 0 auto;
+    margin: 50px 20px; # top and bottom are 50px, and l r are 20px
+    
