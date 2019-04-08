@@ -22,3 +22,9 @@
 
 7. Nav Bar
   navbar-light instead of navbar-default
+  navbar-inverse
+  navbar navbar-expand-lg  # when lg or bigger than large, tha bar will expand, otherwise just buiger icon.
+  
+8. display utility
+  <h1 class="d-xl-none">hello</h1>
+  # when xl screen it does not show
