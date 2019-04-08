@@ -1,0 +1,19 @@
+1. Flexbox (utility)
+    d-flex justify-content-end/center/between/around align-items-end/center/
+    # justify change horizontal, align changes the verticle
+    algin-items-start
+    # all items have the height as long as they can, not all the longest one
+    algin-self-start
+    # just ask single one to at the top or end
+    flex-row/column-reverse
+    flex-column flex-md-row 
+    # ask it be column shape except for medium screen as the row
+    
+2. Grid System
+    <div class="row border border-danger">
+      <col-sm-6 col-xl-3>
+    <div class="row border border-danger">
+      <col bg-success>
+      
+3. Conclusion:
+    some important: jumbotron text-center background: url() , container, row and col, <a btn btn-success>
