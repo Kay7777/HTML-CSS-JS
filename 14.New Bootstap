@@ -1,0 +1,24 @@
+1. Blockquote Citation
+2.kinds of H1
+  <h1 class="display-1">this is the dispaly-1</h1>
+  
+3.Default size 16px, font-size unit is rem, 2rem is 32px!
+
+
+4.Padding!
+  <button class="btn btn-warning p-sm-5 p-md-0">
+    # btn btn-warning is the background color
+    # that means padding when small size is 5 and medium is 0 and can also set the xl padding.
+    # p-2 p-md-3 means if not the medium alwasy show o padding, if medium show 3 padding
+    # we have sm, md, lg, xl four sizes module screen!
+ <button class="btn btn-warning pr-sm-5 pl-md-0">
+    #pl, pt, means only padding left or top!
+    
+5. Margin!
+  <button class="mx-sm-2 mx-md-3">
+    # margin changes with the screen size!
+    
+6. Color and Background
+
+7. Nav Bar
+  navbar-light instead of navbar-default
