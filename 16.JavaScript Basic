@@ -1,0 +1,35 @@
+1.Numbers
+    4
+    2.4
+    -10
+    1 / 5 = 0.2
+    1%4 = 1
+    
+2.Strings
+    "hello world"
+    "34"
+    "123"+"asd"
+    "asd"[2]
+    " I can't do it"
+    "nihao".length
+    "nihao a".length  # contains all space
+    "nihao \"nihao\"" # use\"\"get ""
+    "nihao\\" # to print/
+    
+3.Booleans
+    true
+    false
+    
+4.Null and Underfined
+    null
+    undefined
+    
+5.Variables
+    var name = "kaysong";
+    var bolea = true;
+    var num = 34;
+    name = "no name"  // it will change without;
+    num = "asd";   // it can change the kind
+    
+
+    
