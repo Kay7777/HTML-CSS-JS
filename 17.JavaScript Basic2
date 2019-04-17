@@ -1,0 +1,64 @@
+1.Function
+    function name(num){
+      return num * 3;
+    }
+    console.log(something(3)
+    
+2.Something:
+    if(typeof str === "number"){
+      return "this is not a string!"
+    }
+    str.charAt(0).toUpperCase()
+    
+3.Factorial Ex:
+   function factorial(num){
+        if(num === 1){
+            return num;
+        }
+        else{
+            return num * factorial(num-1);
+        }
+    }
+    console.log(factorial(4));
+    
+4.Replace Funtion:
+    function kab(str){
+        if(str.indexOf("-")===-1){
+            return str;
+        }else{
+            return str.replace(/-/g,"_");
+        }
+     }
+     console.log(kab("hello-nihao-aniha"))
+     >>"hello_nihao_aniha
+     
+5.JS. Scope!
+    the inside function var cannot be used in global,
+    but var is golobal, you can change it in the function and it will globally change!
+    this situation happens only when you return this var !!!
+    ####
+    var c = 10;
+    function change(){
+        return c = 11;
+    }
+    console.log(c);
+    change();
+    console.log(c);
+    >>10
+    >>11
+
+    
+6.Higher Order Funtions:
+    function sing(){
+      console.log("sddsds");
+    }
+    setInterval(sing,1000);
+    // every 1000 ms call one sing function!
+    
+    setInterval(function(){
+      console.log("this is a anonymous function");
+    },2000);
+    // an anonymous function and call it every 2000ms.
+    
+
+    
