@@ -1,0 +1,17 @@
+1.Objects ( Dics)
+    var person = {};
+    
+    ## look up
+    person["name"]  // always right!
+    >> "kay"
+    person.name // not good
+    >>"kay"
+    
+    ##push
+    person["age"] = 15;
+    
+    #@change
+    person["age"] += 1;
+    
+    
+    
