@@ -32,4 +32,76 @@
     num = "asd";   // it can change the kind
     
 
+6.Null and Undefined
+    var age;
+    age >> undefined
+    age = null;
+
+7.User-defined Funtion
+    // comment
+    clear() // clear things
+    alert() // alert on the page
+    console.log()   // print things to ourself
+    var username = prompt("your name please!");  // input from the user and store it
+    
+8.connect
+    use <script src=""></script> to connect
+    
+9.Operation
+    var x = 99;
+    x == "99" // true
+    x === "99" // false (type also need to be same)
+    var x = null;
+    x == underfined     // true
+    x === underfined    // false
+    
+    true == "1"         // true
+    0 == false         // true
+    NaN == NaN         // true
+    
+    %%  and
+    ||  or
+    !   not
+    
+    !" "    // false
+    !""     // true
+    !0      // true
+    // you can use !!+what you wanna check to check its boolean
+    // "false" sting true ot false is truthy!
+    // sum up: false: null undefined NaN "" 0 false
+    
+    
+10.Conditionals
+    if 
+    else 
+    else if 
+    
+    EX； 
+    if (age < 18) {
+    }
+    
+    
+11.Number()
+    This funtion can made the input intstring change into the integer!
+    
+12.plus:
+    count++;
+    count += 2;
+    
+13.Loops:
+    while(condition){
+    }
+    
+14.indexOf
+    str.indexOf("w")    // get the index of this letter in string
+    while (str.indexOf("w") === -1 {}   // it not exists!
+    
+15.FOR loops
+    for (init; condition; step){}
+    EX:
+    for (var count=0; count < 6; count++) {}
+    // for condition only contains the num condition, if you have other condotion,
+    // make them in a if statement inside of the for loops
+    
+    
     
