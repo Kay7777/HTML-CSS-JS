@@ -1,0 +1,83 @@
+1.Arrays
+    var friends = ["linda","leo","nicole"];
+    console.log(friends[0]);
+    console.log(friends[1]);
+    friends[3] = "lee"; //add one element 
+    var friends = [];  // no friends
+    var friends = new Array() // uncommon
+    var friends = [34, true, "sd", null];  // any kind of data
+    friends.length  >>4
+    console.log(friends[2][1]);
+    
+    #### 6 kinds of important ####
+    colors.push("sdasd");   // push add
+    colors.pop();     // return and delete
+    colors.unshift("asd");    // add a new ele to the front
+    colors.shift();     // remove the first ele in the array
+    friends.indexOf("12");    // get the first this ele index in te array
+    // if there is no ele in the array, it will return -1
+    var new_array = arrya.slice(1,3);   // get index from 1 to 2 of the original array.
+    
+    
+2.Iteration
+    for loop:
+    var list = [1,2,3,4,5];
+    ##first way##
+    for(var i=0; i<list.length; i++){
+      console.log(list[i]);
+    }
+    ##second way##
+    list.forEach(function(item){
+      console.log(item);
+    });
+    
+    
+    ####practise!
+    var string = [1,1,1,1,1];
+    function isUniform(arr){
+        var decidsion = true;
+        if (arr.length ===1){
+            return true;
+        }
+        for(i=0; i<string.length-1; i++){
+            if(arr[i] !== arr[i+1]){
+                decidsion = false;
+            }
+        }
+        return decidsion;
+    }
+    console.log(isUniform(string));
+
+    var verse = [1,2,3,4,5];
+    function reverse(arr){
+        for(i=arr.length-1; i>=0; i--){
+            console.log(arr[i]);
+        }
+    }
+    reverse(verse);
+
+
+
+    var addsum = [1,2,3,4,5];
+    function add(arr){
+        var sum = 0;
+        for(i=0; i<arr.length;i++){
+            sum+=arr[i];
+        }
+        return sum;
+    }
+    console.log(add(addsum));
+
+
+
+    var Max = [1,2,3,4,6,2];
+    function max(arr) {
+        var amx_num = 1;
+        for(i=0;i<arr.length;i++){
+            if (arr[i] >= amx_num){
+                amx_num = arr[i]
+            }
+        }
+        return amx_num;
+    }
+    console.log(max(Max));
