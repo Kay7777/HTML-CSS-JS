@@ -1,5 +1,8 @@
 1.Objects ( Dics)
-    var person = {};
+    var person = {
+    name:"xiaoming",
+    age:11
+    };
     
     ## look up
     person["name"]  // always right!
@@ -10,8 +13,29 @@
     ##push
     person["age"] = 15;
     
-    #@change
+    ##change
     person["age"] += 1;
     
+    ##Speak:
+    var catspeak = {};
+    catspeak.speak = function(){
+        return "MEOW";}
+    var dogspeak = {};
+    dogspeak.speak = function(){
+        return "WOOF";}
+    catspeak.speak();
+    >>"MEOW";
     
+    ## _ objects
     
+    ##The keyword this!
+    ## make a array in the obj, and made a funtion called print in the function,
+    ## use this.data to get the array in the obj to for loop each data in a new loop function
+    var obj = {};
+    obj.data = [1,2,3,4,5];
+    obj.print = function(){
+      this.data.forEach(function(ele){
+          console.log(ele);
+      });
+    };
+    obj.print();
