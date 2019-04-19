@@ -1,0 +1,101 @@
+1.select the Body and change its color every second
+    var body = document.querySelector("body");
+    var isBlue = false;
+    setInterval(function){
+      if (isBlue){
+        body.style.background = "white";
+      }else{
+        body.style.background = "#3498db";
+      }
+      isBlue = !isBlue;
+    },1000); 
+    
+2.Methods:
+    document.getElementById()
+    document.getElementsByClassName()
+    document.getElementsByTagName()   //li,ul
+    document.querySelector()    // select the id thing, tag, or use".class" but just first one!
+    // or li .class: all property in css can used here!
+    document.querySelectorAll()
+    
+    EX:
+    var tag = document.getElementById("highlight");
+    console.dic(tag); // will print all the properties in the hightlight id
+    if you have more than: use this
+    console.dic(tag[0]);
+    
+    
+3.document:
+    document.html/head/title/My title
+    document.html/body/a/href/My link
+    document.html/body/h1/My header
+    
+    # exercise! all same!
+    var p = document.getElementById("first");
+    var p = document.getElementsByClassName("first")[0];
+    var p = document.getElementsByClassName("special");
+    var p = document.getElementsByTagName("p");
+    var p = document.querySelector(".special");
+    var p = document.querySelectorAll(".special")[0];
+    var p = document.getElementsByTagName("p")[0];
+    
+    
+4.style
+    name.style.border = "";
+    p.classList.add("");
+    p.classList.remove("");
+    p.classList.toggle(); // add again ot remove
+    
+    
+5.innerHTML
+    var p = document.querySelector("p");
+    p.textContent
+    p.innerHTML   // this will return all detials in the text like strong!
+    // or change 
+    p.textContent = "Google Bye";
+    document.body.innerHTML = "<h1>Goodgle Bye</h1>";
+    
+    
+6.Attributes
+    var link = document.querySelector("a");
+    link.getAttribute("href");
+    link.setAttribute("href","www.dogs.com"); // its okay direcrly change it.
+    // cannot use getAttribute for all tags, you need to make a forEach or for loop
+    for(var i=0;i>link.length;i++){
+      link[i].style.border = "";
+      link[i].getAttribute("href","http://www/kaysong.tech");
+      ......
+    }
+    
+7.Events
+    <button>Click Me>/button>
+    <p>No One Has Clicked Me Yet</p>
+    var button = document.querySelector("button");
+    var paragraph = document.querySelector("p");
+    button.addEventListener("click",function(){
+      paragraph.textContent = "Someone Clicked The Button!";
+    });
+    
+    EX:
+    var button = document.querySelector("button");
+    var isPink = false;
+    button.addEventListener("click", function(){
+        if(!isPink){
+            document.body.style.background = "pink";
+        }else{
+            document.body.style.background = "white";
+        }isPink = !isPink;
+    });
+    
+    Another toggle way:
+    // add style pink class in the html
+    <style>
+        .pink{
+            background:pink;
+        }
+    </style>
+    // then add the toggle funtion in the js!
+    var button = document.querySelector("button");
+    button.addEventListener("click",function(){
+       document.body.classList.toggle("pink");
+    });
