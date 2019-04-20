@@ -1,0 +1,56 @@
+1.Selecting with jQuery
+    $("selectorGoesHere");
+    EX:
+    $(".sale")
+    $("img")
+    $("#bonus")
+    $("li a")
+    
+2.Manipulating Style
+    1.$("h1").css("color","yellow");
+    2.var styles = {};
+      $("h1").css(styles)
+    3.$("h1").css({
+        fontSize: "10px";
+        border: "3px dashed purple";
+      });
+    4.$("div:first-of-type").css("color","pink");
+
+    
+3.Objectives:
+    1.val()
+      $("input").val("");   // clear the input block.
+    2.text()
+      $("h1").text()
+      $("h1").text("yes you change me!")
+    3.attr()
+      $("h1").attr("type","color");   // change the attributes
+      
+    4.html()
+      $("h1").html("yes you change me!")
+      $("li").html("<a href="www.google.com>Click here</a>"
+    5.addClass()
+    6.removeClass()
+    7.toggleClass()
+    
+4.Events
+    //get more search on api.jquery.com
+    1.Click()
+        $("h1").click(function(){
+          alert("");
+          $("this").css("color","pink");
+          });
+    2.Keypress()
+        $("input").keypress(function(event){
+          if(event.which===13){
+            alert("You win");
+          }
+        });  
+        // to test do you input the right string!
+        
+    3.on()
+        $("h1").on("click",function(){
+          $(this).css("color","purple");
+        });
+        
+   
