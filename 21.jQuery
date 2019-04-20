@@ -52,5 +52,16 @@
         $("h1").on("click",function(){
           $(this).css("color","purple");
         });
-        
+        $("button").on("mouseenter",function(){
+            $(this).css("font-weight","bold");
+        });
+        better to use .on("click",function(){});
    
+5.Effects:
+         $("button").on("click",function(){
+            $("div").fadeOut(1000);
+            $("div").fadeIn(1000);
+            $("div").fadeToggle(1000);
+            #("div").slideToggle(1000);
+                $(this).remove();
+         });
