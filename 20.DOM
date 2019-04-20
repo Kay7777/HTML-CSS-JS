@@ -99,3 +99,10 @@
     button.addEventListener("click",function(){
        document.body.classList.toggle("pink");
     });
+    
+    // in the input number block, we use event "change"!
+    // "mouseover": when the mouse pointer on the stuff
+    // "mouseout": when the mouse pointer leaves the stuff
+    
+    to build a to do list, you can use for loop and put list[i].addEventLisener("click"/"mouseover"/"mouseout",......)
+    
