@@ -1,0 +1,38 @@
+1.API
+    Application Programming Interface
+     
+2.XML
+    like HTML
+3.JSONL
+    like JS
+    
+    EX:
+    var request = require("request");
+    request("http://www.reddit.com",function(error,response,body){
+        if(error){
+            console.log("something went wrong!");
+            console.log(error);
+        }else{
+            if(response.statusCode==200){
+                console.log(body);
+            }
+        }
+    });
+    
+    EX:
+    var request = require("request");
+    request("http://www.reddit.com",function(error,response,body){
+        if(!error && response.statusCode==200){
+            var parsedData = JSON.parse(body);
+            console.log(parsedData[you can use this list to search more detailed!]);
+        }
+    }); 
+    
+    EX:
+    var request = require("request");
+    request("https://jsonplaceholder.typicode.com/users/1",function(error,response,body){
+        if(!error && response.statusCode==200){
+            var parsedData = JSON.parse(body);
+            console.log(parsedData);
+        }
+    }); 
