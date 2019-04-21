@@ -1,0 +1,25 @@
+0.How to install db
+    1.mkdir data
+    2.sudo apt-get install -y mongodb-org
+    3.echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
+    4.chmod a+x mongod
+    5../mongod
+    6.keep this one and open another terminal 
+      npm install mongoose --save
+      
+      
+1.MongoDB 
+    mongod
+    mongo
+    help
+    show dbs
+    use
+    insert
+      db.dogs.insert({})  //input special attributes
+    find
+      db.dogs.find({})  // input a special attributes, find relative dogs
+    update
+      db.dogs.update({who},{add what attributes})
+      db.dogs.update({who},{$set:{age:12,name:"qwe"}})  // add more than 2 attrs
+    remove
+      db.dogs.remove({})
