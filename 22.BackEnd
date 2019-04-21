@@ -1,0 +1,125 @@
+1.Command line
+    ls: list all branches
+    cd .. : back to last level
+    cd colors/: go into next level
+    touch orange.txt: create a new file
+    mkdir fivecolors: create a new directory 
+    rm blue.txt: remove file
+    rm -rf colors: remove folder
+    
+    
+2.Node.js
+    use the terminal say node filename, to call the js file
+    
+3.NPM
+    npm install: to install npm
+    require(): to inculde a package
+    EX:
+    npm install cat-me
+    var cat = require("cat-me");
+    console.log(cat());
+    node hello.js
+    
+4.Express
+    npm install express
+    EX:
+    app.get("/",function(req,res){
+        res.send("hi,there");
+    });
+    app.get("/bye",function(req,res){
+        res.send("goobel");
+    });
+    this is dynamic webchannge
+    
+    
+5.Package.json
+    --save : to install the packages
+    npm init: quickly create a new package.json
+    
+6.Route Params
+    app.get check from the top tp bottom
+    and use* means else
+    if add :id/:subtitle, this : means this can change and send same page
+    you can send the console.log(req.params);
+    
+7.Ex
+    every time, you meed to npm install things
+    var express = require("express");
+    var app = express();
+    app.get("/",function(req,res){
+        res.send("Hi there, welcome to my assignment!");
+    });
+    app.get("/speak/:animal",function(req,res){
+        var animal = req.params.animal;
+        var sounds = {
+            pig : "wow",
+            cow : "moo",
+            dog : "woof"
+        };
+        var sound = sounds[animal];
+        res.send("The "+animal+" says "+sound);
+    });
+    app.listen(process.env.PORT,process.env.IP,function(req,res){
+        console.log("now serving your app");
+    })
+    app.get("*",function(req,res){
+        res.send("Sorry!");
+    })
+    
+8.Read File
+    c9 filename // can open the file
+    res.render("");
+    // make a new dir with the app.js called views
+    mkdir views
+    // then create files you want!
+    touch new.ejs
+    
+    EX:
+    app.get("/:thing"),function(req,res){
+      var thing = req.params.thing;
+      res.render("love.ejs",thing);
+    });
+    In the ejs:
+    <h1> you will win <%= thing %></h1>
+    // use the <%=  %> to show this area is javascript!
+    
+9.Conditions and Loops
+    <% for(var i=0; i<posts.length;i++){ %>
+      <li><%= posts[i].title %> - <%= post.auther %></li>
+    <% }; %>
+    
+    <% posts.forEach(function(post){ %>
+      <li>
+         <%= post.title%> - <%= post.auther%>
+      </li>
+    <% }); %>
+    
+    // no equal signs for if and loops, others use <%= %>
+    
+10.css
+    make a public dir
+    use <link rel="stylesheet" href="/ app.css">
+    to get the css attributes
+    
+    can write to set all view files to ejs file
+    app.set("view engine", "ejs");
+    
+    in the view folder, makes two file, one is header, one is footer.
+    <% include partials/header.ejs %>
+    
+11.Sum up steps
+    1.make a dir
+    2.npm init(key is app.js)
+    3.npm install express --save
+    4.npm install ejs
+    5.touch app.js
+    6.c9 app.js
+    7.var express = require("express");
+      var app = express();
+      app.set("view engine","ejs");
+      // here is content//
+      app.listen...
+    8.mkdir views
+    9.touchviews/home.ejs
+    
+    
