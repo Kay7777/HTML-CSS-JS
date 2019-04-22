@@ -135,3 +135,34 @@
           }
       });
   });
+  User.findOne({email:"asdasd@asdasd.com"}).populate("posts").exec(function(err,user){
+      console.log(user);
+  });
+  // find one user's all information
+  
+  
+  
+  
+3.model.exports!
+    var Post = require("./models/post");
+    var User = require("./models/user");
+    
+    //in the model/post.js
+    var mongoose = require("mongoose");
+    var postSchema = new mongoose.Schema({
+        title:String,
+        content:String
+    });
+    module.exports = mongoose.model("Post",postSchema);
+    
+    //in the model/user.js
+    var mongoose = require("mongoose");
+    var userSchema = new mongoose.Schema({
+        email:String,
+        name:String,
+        posts:[{
+            type:mongoose.Schema.Types.ObjectId,
+            ref:"Post"
+        }]
+    });
+    module.exports = mongoose.model("User", userSchema);
