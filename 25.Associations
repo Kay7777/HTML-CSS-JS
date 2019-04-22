@@ -1,0 +1,137 @@
+1.By Association arrya:
+  var mongoose = require("mongoose");
+  mongoose.connect("mongodb://localhost/blog_demo",{useNewUrlParser: true});
+
+  // {
+  //     email:"asdasd",
+  //     name:"asdasd",
+  //     posts:[
+  //         {title:"asd", content:"asdsad"}
+  //         ]
+  // }
+
+  var postSchema = new mongoose.Schema({
+      title:String,
+      content:String
+  });
+
+  var Post = mongoose.model("Post",postSchema);
+
+  var userSchema = new mongoose.Schema({
+      email:String,
+      name:String,
+      posts:[postSchema]
+      // we associate postSchema and userSchema by this posts:[postSchema] this assocaite array!
+  });
+  var User = mongoose.model("User", userSchema);
+  // var newUser = new User({
+  //     email:"chali@qq.com",
+  //     name:"asdasdasd"
+  // });
+
+  // newUser.posts.push({
+  //     title:"asdasd",
+  //     content:"asdads"
+  // });
+
+  // newUser.save(function(err,user){
+  //     if(err){
+  //         console.log(err);
+  //     }else{
+  //         console.log(user);
+  //     }
+  // });
+
+  // var newPost = new Post({
+  //     title:"Refelctions  on Apples",
+  //     content:"They are delicsious"
+  // })
+
+  // newPost.save(function(err,post){
+  //     if(err){
+  //         console.log(err);
+  //     }else{
+  //         console.log(post);
+  //     }
+  // });
+
+  User.findOne({name:"Hermione Granger"},function(err,user){
+      if(err){
+          console.log(err);
+      }else{
+          user.posts.push({
+              title:"sdsds",
+              content:"sdsd"
+          });
+          user.save(function(err,user){
+              if(err){
+                  console.log(err);
+              }else{
+                  console.log(user);
+              }
+          });
+      }
+  });
+  
+  
+  
+  
+2.Referencing data
+
+  var mongoose = require("mongoose");
+  mongoose.connect("mongodb://localhost/blog_demo",{useNewUrlParser: true});
+
+  // {
+  //     email:"asdasd",
+  //     name:"asdasd",
+  //     posts:[
+  //         123123123,
+          // 3213123123,
+          // 234234123
+  //         ]
+  // }
+  // {
+  //     id:123123123,
+  //     title:"asasas"
+  // }
+
+  var postSchema = new mongoose.Schema({
+      title:String,
+      content:String
+  });
+
+  var Post = mongoose.model("Post",postSchema);
+
+  var userSchema = new mongoose.Schema({
+      email:String,
+      name:String,
+      posts:[{
+          type:mongoose.Schema.Types.ObjectId,
+          ref:"Post"
+      }]
+  });
+  var User = mongoose.model("User", userSchema);
+  User.create({
+      email:"asdasd@asdasd.com",
+      name:"asdad"
+  });
+
+  Post.create({
+      title:"how to cook? Pt.2",
+      content:"asdasdad"
+  },function(err,post){
+      User.findOne({email:"asdasd@asdasd.com"},function(err,foundUser){
+          if(err){
+              console.log(err);
+          }else{
+              foundUser.posts.push(post);
+              foundUser.save(function(err,data){
+                  if(err){
+                      console.log(err);
+                  }else{
+                      console.log(data);
+                  }
+              });
+          }
+      });
+  });
