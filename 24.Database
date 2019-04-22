@@ -23,3 +23,11 @@
       db.dogs.update({who},{$set:{age:12,name:"qwe"}})  // add more than 2 attrs
     remove
       db.dogs.remove({})
+
+
+2.How to change db:
+    1.mongo
+    2.show dbs
+    3.use yelp_camp
+    4.show collections
+    5.db.campgrounds.drop() //delete all database in the campgrounds!
